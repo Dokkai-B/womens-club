@@ -1,0 +1,116 @@
+/* Class */
+
+/* MemberList-styles.css */
+.gridContainer {
+    display: grid;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    grid-template-columns: repeat(3, 1fr); /* creates a grid with 3 equal columns */
+    row-gap: 6vh;
+    column-gap: 10vh;
+    justify-content: center; 
+    padding: 0 15%; 
+    min-width: 70vh; 
+    min-height: 50vh;  
+    align-items: flex-start;
+    /* border: 1px solid #000000; */
+}
+  
+.memberCard {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    width: 16em;
+    min-height: auto;
+    
+    max-height: 18em;
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    min-width: max-content;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* add drop shadow */
+    animation: floatUp 1.5s ease-out;
+}
+
+.MLUserImage {
+    width: 9em;
+    height: 9em;
+    border-radius: 100%;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.MLContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    min-width: 70vh;
+    min-height: 47.3vh;
+}
+
+.MLadminButtons2 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around;
+    width: 100%; */
+    /* margin-bottom: 1em; */
+
+}
+
+.filterMLOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #000000; */
+    /* margin: 0 14em 2vh 0; */
+}
+
+.filterMLOptionsContainer > * {
+    display: flex;
+    flex-direction: row !important;
+    min-width: min-content;
+    margin-right: 0.5vw;
+    width: auto;    
+}
+
+.filterMLOptionsContainer > Button {
+    min-width: max-content;
+}
+
+.filterMLOptionsContainer > * > * {
+    align-self: center;
+}
+
+.filterMLOptionsContainer > * > *:not(p):not(Button) {
+    background: white;
+    border-radius: 10px;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: repeat(2, 1fr); /* creates a grid with 2 equal columns for smaller screens */
+      padding: 0 5%; /* reduce padding for smaller screens */
+    }
+  
+    .memberCard {
+      width: 100%; /* make the member card take full width on smaller screens */
+    }
+  
+    .MLContainer {
+      padding: 0 5%; /* reduce padding for smaller screens */
+    }
+  
+    .filterMLOptionsContainer {
+      flex-direction: column; /* stack the filter options vertically on smaller screens */
+      align-items: stretch; /* make the filter options take full width on smaller screens */
+    }
+  
+    .filterMLOptionsContainer > * {
+      margin-bottom: 1em; /* add some vertical spacing between filter options on smaller screens */
+    }
+  }

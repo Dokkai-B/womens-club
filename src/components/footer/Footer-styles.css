@@ -1,0 +1,10 @@
+.Footer {
+    background-color: #000E24;
+    color: white;
+    padding: 10px;
+}
+
+.Footer img {
+    width: 25vw;
+    margin-left: 5vw;
+}

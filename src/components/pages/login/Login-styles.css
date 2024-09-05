@@ -1,0 +1,56 @@
+.InputContainer > * > Input {
+  margin-top: 10px;
+  padding: 5px; /* adjust this value as needed */
+  border-color: #B5AFAF;
+  font-size: 0.8rem !important; /* adjust this value as needed */
+}
+
+.LoginFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 90vw; /* Changed from 27.5vw to 90vw for smaller screens */
+  max-width: 500px; /* Add a max-width */
+  border-radius: 20px;
+  background-color: white;
+  padding: 45px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: floatUp 1s ease-out;
+}
+
+.InputContainer {
+  margin: 10px;
+  width: 95%;
+}
+
+.LButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Media query for screens larger than 768px */
+@media (min-width: 768px) {
+  .LoginFormContainer {
+    width: 50vw; /* Adjust the width for larger screens */
+  }
+}
+
+/* Media query for screens larger than 1024px */
+@media (min-width: 1024px) {
+  .LoginFormContainer {
+    width: 27.5vw; /* Adjust the width for even larger screens */
+  }
+}
+
+.LoginFormContainer input::placeholder {
+  font-size: 1rem !important; /* adjust this value as needed */
+}
+
+.LoginFormContainer input {
+  font-family: 'Jost', sans-serif, Arial;
+  font-size: 1rem !important; /* adjust this value as needed */
+}

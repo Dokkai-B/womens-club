@@ -1,0 +1,42 @@
+.PageBanner {
+    background: linear-gradient(to bottom, #073A87, #000E24);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.PageBanner > p {
+    background: linear-gradient(to bottom, #FFFFFF, #E8E5E5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 11.5rem;
+    font-weight: 900;
+    margin-bottom: calc(-4rem - 11px);
+    stroke: none;
+}
+
+.PageContent {
+    background: #E8E5E5;
+}
+
+.PageContent > h1 {
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+.PageContent > p:last-child {
+    padding: 0 2rem;
+    font-size: 1.1rem;
+    padding-bottom: calc(5vh + 12px);
+}
+
+a:hover {
+    color: darkgray;
+}

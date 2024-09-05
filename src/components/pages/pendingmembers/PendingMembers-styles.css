@@ -1,0 +1,77 @@
+/* Class */
+
+/* MemberList-styles.css */
+.pendingMembersContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vh;
+}
+  
+.pendingMemberCard {
+    background: white;
+    /* min-height: 175px; */
+    width: fit-content;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 25px;
+    align-self: center;
+    animation: floatUp 1s ease-out;
+    /* justify-content: space-around; */
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.PMUserImage {
+    width: 145px;
+    height: 145px;
+    border-radius: 100%;
+    align-self: flex-start;
+    margin: 25px 40px;
+}
+
+.pendingMemberDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 25px 40px 25px 0px;
+}
+
+.pendingMemberDetails > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.pendingMemberDetails > div > p:first-child {
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.pendingMemberCard > div:last-child {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 40px;
+}
+
+.pendingMemberCard > div:last-child > Button {
+    border-radius: 2.5px;
+    color: white;
+    font-weight: 400;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+/* Body */
+
+/* ID */
+/* #blueHeader {
+    background: linear-gradient(to bottom, #063172 0%, #000E24 100%);
+    color: white;
+    padding: 4%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;   
+} */

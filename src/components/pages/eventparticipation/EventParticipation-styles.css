@@ -1,0 +1,46 @@
+.ediv {
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    max-width: 750px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-size: 50px;
+    color: #073A87;
+  }
+  
+  .bt {
+    float: left;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .bt {
+      float: none; /* stack the elements vertically on smaller screens */
+    }
+  }
+  
+  label {
+    float: left;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    label {
+      float: none; /* stack the elements vertically on smaller screens */
+    }
+  }
+  
+  .partButton {
+    margin-top: 20px;
+  }
+  
+  .back {
+    position: relative;
+    left: 5px;
+    top: 5px;
+  }

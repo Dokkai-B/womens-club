@@ -1,0 +1,22 @@
+.LogoContainer {
+    background: linear-gradient(to bottom, #073A87, #000E24);
+    padding: 10px;
+    /* height: 100vh; */
+    min-width: 40vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: floatRight 1.5s ease-out;
+}
+
+.LogoContainer img {
+    width: 35vw;
+    /* animation: floatUp 1.5s ease-out; */
+}
+
+/* ---------------------- Responsive ------------------- */
+@media (max-width: 768px) { 
+    .LogoContainer img {
+        width: 300px;
+    }
+}

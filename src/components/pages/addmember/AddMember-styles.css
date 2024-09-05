@@ -1,0 +1,29 @@
+.AddMemberFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: floatUp 1.5s ease-out;
+}
+
+.AMLogoContainer {
+  background: linear-gradient(to bottom, #073A87, #000E24);
+  padding: 10px;
+  /* height: 100vh; */
+  min-width: 40vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* animation: floatRight 1.5s ease-out; */
+}
+
+.AMLogoContainer img {
+  width: 35vw;
+}
+  

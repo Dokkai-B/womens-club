@@ -1,0 +1,97 @@
+.EPOuterContainer {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .EventDetails {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    margin-top: 1.75%;
+    padding-right: 4%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #01132D;
+  }
+  
+  .EPDetailsContainer { 
+    display: flex;
+    align-self: center;
+    flex-direction: column; 
+    margin: auto auto 20px auto; /* top/bottom margin, left/right margin */
+    /* align-items: center; */
+    width: 50vw;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .EPDetailsContainer {
+      width: 90vw; /* adjust the width for smaller screens */
+    }
+  }
+  
+  .EPButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #9C6A3D;
+    padding-right: 4%;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+  }
+  
+  .EPButtonStyle {
+    border: 2px solid white; 
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .EventDetailsMultiline {
+    display: flex;
+    align-self: center;
+    flex-direction: row; 
+    width: 50vw;
+    justify-content: space-between;
+    padding: 1.3% 4%;
+    border-bottom: 1px solid #01132D;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .EventDetailsMultiline {
+      width: 90vw; /* adjust the width for smaller screens */
+      flex-direction: column; /* stack the elements vertically on smaller screens */
+    }
+  }
+  
+  .EventDetailsMultiline > *:first-child {
+    margin-right: 20px;
+  }
+  
+  .EventDetailsMultiline > *:last-child {
+    margin-left: 10px;
+    text-align: justify;
+  }
+
+  .EPDetailsContainer { 
+    display: flex;
+    align-self: center;
+    flex-direction: column; 
+    margin: auto auto 20px auto; /* top/bottom margin, left/right margin */
+    width: 50vw;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .EPDetailsContainer {
+      flex-direction: column-reverse; /* arrow goes above event details on smaller screens */
+      width: 90vw; /* adjust the width for smaller screens */
+    }
+  }
+  

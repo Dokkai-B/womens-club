@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+.Home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.HomeLogoContainer {
+    background: linear-gradient(to bottom, #073A87, #000E24);
+    /* padding: 10px; */
+    min-width: 40vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.HomeLogoContainer img {
+    width: 35vw;
+}
+
+
+
+.orgQuote {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5em;
+    color: #9C6A3D;
+    text-align: center;
+    text-shadow: 2px 2px 4px #c6c6c6;
+    animation: floatUp 1.5s ease-out;
+}
+
+/* ---------------------- Responsive ------------------- */
+@media (max-width: 768px) { 
+    .HomeLogoContainer {
+        padding-top: var(--navbar-height);
+        height: 35vh;
+        width: 100vw;
+    }
+    
+    .HomeLogoContainer img {
+        width: 300px;
+    }
+}

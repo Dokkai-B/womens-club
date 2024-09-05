@@ -1,0 +1,75 @@
+.EventsContainer { 
+    display: flex;
+    flex-direction: column; 
+    margin: 0.7% 20%; /* top/bottom margin, left/right margin */
+}
+
+@media screen and (max-width: 768px) {
+  .EventsContainer {
+    margin: 0.7% 10%; /* reduce left/right margin for smaller screens */
+  }
+}
+
+.EventTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #9C6A3D;
+    padding: 1.3% 4%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    color: white;
+    flex-direction: row;
+}
+
+.EventDetailsContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding-bottom: 2% !important;
+    margin-top: 1.75% !important;
+    padding-right: 4% !important;
+    padding-left: 4% !important;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid #01132D !important;
+    width: 100% !important;
+}
+
+.filterOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .filterOptionsContainer {
+    flex-direction: column; /* stack filters vertically on smaller screens */
+  }
+}
+
+.filterOptionsContainer > * {
+    display: flex;
+    flex-direction: row !important;
+    max-width: 18%;
+    margin-right: 0.5vw;
+    align-self: center;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  .EventsContainer {
+    grid-row: 2 / 3; /* this will place the EventsContainer in the middle row */
+  }
+  
+  footer {
+    grid-row: 3 / 4; /* this will place the footer in the last row */
+  }
+
+@media screen and (max-width: 768px) {
+  .filterOptionsContainer > * {
+    max-width: 100%; /* allow filters to take up full width on smaller screens */
+    margin-bottom: 0.5vw; /* add vertical margin between filters on smaller screens */
+  }
+}
